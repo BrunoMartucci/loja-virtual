@@ -29,7 +29,7 @@ public class EstadoController {
         return estadoService.alterar(estado);
     }
 
-@DeleteMapping("/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> excluir(@PathVariable("id") Long id){
         estadoService.excluir(id);
         return ResponseEntity.ok().build();
